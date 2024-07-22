@@ -1,8 +1,13 @@
+# Tarea Semana 8
+
+# Organización de un proyecto orientado a objetos
+
 import os
 
 def mostrar_codigo(ruta_script):
     # Asegúrate de que la ruta al script es absoluta
     ruta_script_absoluta = os.path.abspath(ruta_script)
+
     try:
         with open(ruta_script_absoluta, 'r') as archivo:
             print(f"\n--- Código de {ruta_script} ---\n")
@@ -20,7 +25,7 @@ def mostrar_menu():
     opciones = {
         '1': 'Archivos semana 8/Tarea_semama_7.py',
         '2': 'Archivos semana 8/Andres.txt',
-        # Agrega aquí el resto de las rutas de los scripts
+        # Agrega aquí mas rutas de los scripts
     }
 
     while True:
@@ -43,3 +48,7 @@ def mostrar_menu():
 # Ejecutar el dashboard
 if __name__ == "__main__":
     mostrar_menu()
+
+# Fin del Programa
+
+# Andres Ponce M.
