@@ -1,6 +1,4 @@
-
 import os
-
 
 def mostrar_codigo(ruta_script):
     # Asegúrate de que la ruta al script es absoluta
@@ -14,13 +12,14 @@ def mostrar_codigo(ruta_script):
     except Exception as e:
         print(f"Ocurrió un error al leer el archivo: {e}")
 
-
 def mostrar_menu():
     # Define la ruta base donde se encuentra el dashboard.py
     ruta_base = os.path.dirname(__file__)
 
+    # Diccionario con las opciones del menú y sus respectivas rutas
     opciones = {
-        '1': 'Unidad 1/1.2. Tecnicas de Programacion/1.2-1. Ejemplo Tecnicas de Programacion.py',
+        '1': 'Semana 7/Semana 7/Tarea_semama_7.py',
+        '2': 'Semana 7/Semana 7/Andres.txt',
         # Agrega aquí el resto de las rutas de los scripts
     }
 
@@ -28,7 +27,7 @@ def mostrar_menu():
         print("\nMenu Principal - Dashboard")
         # Imprime las opciones del menú
         for key in opciones:
-            print(f"{key} - {opciones[key]}")
+            print(f"{key} - {os.path.basename(opciones[key])}")
         print("0 - Salir")
 
         eleccion = input("Elige un script para ver su código o '0' para salir: ")
@@ -40,7 +39,6 @@ def mostrar_menu():
             mostrar_codigo(ruta_script)
         else:
             print("Opción no válida. Por favor, intenta de nuevo.")
-
 
 # Ejecutar el dashboard
 if __name__ == "__main__":
