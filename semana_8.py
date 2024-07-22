@@ -18,8 +18,8 @@ def mostrar_menu():
 
     # Diccionario con las opciones del menú y sus respectivas rutas
     opciones = {
-        '1': 'Semana 7/Semana 7/Tarea_semama_7.py',
-        '2': 'Semana 7/Semana 7/Andres.txt',
+        '1': 'Archivos semana 8/Tarea_semama_7.py',
+        '2': 'Archivos semana 8/Andres.txt',
         # Agrega aquí el resto de las rutas de los scripts
     }
 
